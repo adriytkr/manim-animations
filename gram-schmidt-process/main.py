@@ -104,7 +104,7 @@ class HookScene(GridScene):
     self.play(FadeIn(angle))
     self.wait(0.5)
 
-    self.play(ApplyWave(self.grid,amplitude=0.7),run_time=0.7,rate_func=linear)
+    self.play(Wiggle(self.grid,run_time=2))
     self.wait(0.5)
 
     basis_v1_normalized=Vector([4/np.sqrt(17),1/np.sqrt(17)])
