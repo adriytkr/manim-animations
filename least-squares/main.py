@@ -137,7 +137,7 @@ class Hook3DScene(ThreeDScene):
       resolution=(20,20)
     )
     xy_plane.set_opacity(0.6)
-    self.add(xy_plane)
+    self.play(Create(xy_plane))
 
     # Draw b
     b=Arrow3D(start=ORIGIN,end=np.array([6,0,3]),thickness=0.02)
