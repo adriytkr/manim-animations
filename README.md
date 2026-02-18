@@ -7,4 +7,5 @@ This repository contains the source code for the [Manim](https://docs.manim.comm
 # 🎥 Indexes
 |🎬 Title|📂 Folder|🔗 Watch|
 |---|---|---|
-|Gram-Schmidt Process Explained Visually|[/gram-schmidt-process](./gram-schmidt-process)|[Watch](https://youtu.be/jtRnZk7FIxA)|
+<!-- |Gram-Schmidt Process Explained Visually|[/gram-schmidt-process](./gram-schmidt-process)|[Watch](https://youtu.be/jtRnZk7FIxA)| -->
+|Least Squares explained visually|[/least-squares](./gram-schmidt-process)|[Watch](https://youtu.be/wxrL8x8pbZc)|

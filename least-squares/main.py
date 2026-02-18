@@ -226,6 +226,12 @@ class RightHandSideScene(Scene):
     self.wait(0.5)
 
     # General
+    eq_init=MathTex('b','-',r'\text{proj}_{\text{col}(A)}b')
+    self.play(Write(eq_init))
+    self.wait(0.5)
+    self.play(FadeOut(eq_init))
+    self.wait(0.5)
+
     eq1=MathTex('A','x','=','0')
     eq2=MathTex(r'\begin{pmatrix}r_1\\r_2\\\vdots\\r_n\end{pmatrix}','x','=','0')
     eq3=MathTex(
@@ -236,7 +242,7 @@ class RightHandSideScene(Scene):
     )
     eqs=[eq1,eq2,eq3]
 
-    self.play(Write(eq1))
+    self.play(Write(eqs[0]))
     self.wait(0.5)
     for x in range(len(eqs)-1):
       self.play(TransformMatchingTex(eqs[x],eqs[x+1]))
@@ -322,4 +328,9 @@ class RightHandSideHelperScene(GridScene):
       GrowArrow(b_ort_comp),
       FadeIn(b_ort_comp_label)
     )
+    self.wait(0.5)
+
+    # Draw right angle
+    right_angle=RightAngle(b_ort_comp,basis_vec,length=0.4)
+    self.play(FadeIn(right_angle))
     self.wait(0.5)
